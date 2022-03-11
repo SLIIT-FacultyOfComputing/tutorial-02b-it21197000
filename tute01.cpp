@@ -17,7 +17,7 @@ printf("Hello World") --> std::cout << "Hello World";
 2.54cm = 1 inch
 */
 
-
+/*
 #include <stdio.h>
 int main() 
 {
@@ -27,4 +27,25 @@ int main()
     inches = cm / 2.54;
     printf("Length in inches is %f \n", inches);
     return 0;
-}  
+}  */
+#include <iostream>
+#include<iomanip>
+
+using namespace std;
+
+int main(){
+    float cm, inches;
+    
+    // Asking for input
+    cout << "Enter the length in centimeters: ";
+    cin >> cm;
+    
+    // Conversion
+    inches = cm / 2.54;
+    
+    
+    // Displaying output
+    cout << cm << " cm is equals to: " << inches << " inches" << endl;
+    
+    return 0;
+}
